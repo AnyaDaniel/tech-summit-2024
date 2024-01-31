@@ -1,0 +1,65 @@
+"use client";
+import React, { useState } from "react";
+import All from "../projects/All";
+
+
+const Speakers = () => {
+  const tabs = [
+    {
+      id: 1,
+      name: "All",
+      component: <All />,
+    },
+   
+
+    // {
+    //   id: 5,
+    //   name: "Interior",
+    //   component: <Interior />,
+    // },
+
+    // Add more tabs if needed
+  ];
+
+  const [activeTab, setActiveTab] = useState(tabs[0]);
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
+  return (
+    <section
+      id="Speakers"
+      className='mt-10 min-w-full  flex flex-col  min-h-screen py-10 lg:py-20 mb-12 bg-[#DD0042] bg-no-repeat'
+    >
+      <header className="section-head-parallax ">
+        <h4 className="text-[#fff] text-center lg:text-5xl">
+          Meet Our Speakers
+        </h4>
+        <p className="mt-3 text-white sm:mt-5 text-base  text-center md:mt-5 font-thin  mx-auto">
+        Learn from business leaders and visionaries at the Saskatoon Black Business Expo. Our lineup of speakers includes influential figures who will share insights on their business success, community impact, and navigating the entrepreneurial landscape. Gain valuable knowledge and inspiration from those who have paved the way for excellence.
+        </p>
+      </header>
+      {/* <ul className="lg:py-4 mx-4 lg:mx-0 px-4 flex  items-center flex-row justify-center lg:space-x-8 space-x-4  sticky top-0 w-full overflow-y-hidden z-10 lg:overflow-x-hidden overflow-x-scroll no-scrollbar">
+        {tabs.map((tab) => (
+          <li
+            key={tab.id}
+            className={`mr-2 cursor-pointer  ${
+              activeTab.id === tab.id
+                ? "font-bold bg-dreamBlue px-2 lg:px-6 py-2 text-dreamWhite"
+                : "text-gray-400 font-normal"
+            }`}
+            onClick={() => handleTabClick(tab)}
+          >
+            {tab.name}
+          </li>
+        ))}
+      </ul> */}
+
+      <div className="lg:px-40  pt-10  px-4  overflow-hidden  text-clip">
+        <All />
+      </div>
+    </section>
+  );
+};
+
+export default Speakers;
