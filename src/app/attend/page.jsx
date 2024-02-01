@@ -1,7 +1,17 @@
+"use client"
+import axios from "axios";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const Attend = () => {
+  const [loading, setLoading] = useState(false)
+  const [formData, setFormData] = useState({ name: "", email: "", phone: "", organisation: "", hearingMethod: null, regType: null, notes: "" })
+  function handleChange(e) {
+    const former = JSON.parse(JSON.stringify(formData))
+    former[e.target.name] = e.target.value
+    setFormData(former)
+  }
   return (
     <div className="mt-32 lg:mt-40 lg:mb-20">
       <div className=" flex items-center justify-center gap-x-3 text-2xl md:text-3xl text-center font-semibold text-black mb-4 md:mb-6">
@@ -14,16 +24,50 @@ const Attend = () => {
         />{" "}
         <h1>- Attendee Registration Form</h1>
       </div>
-      <form className="max-w-xl mx-auto">
+      <form className="max-w-xl mx-auto" method="post" onSubmit={async e => {
+        e.preventDefault()
+        try {
+          setLoading(true)
+          const { data, err } = await axios.post("/api/attendee", formData)
+          if (!err) {
+            toast("Attendance Request form sent successfully and will be reviewed", {
+              theme: "colored",
+              type: "success",
+            })
+            setFormData({ name: "", email: "", phone: "", organisation: "", hearingMethod: null, regType: null, notes: "" })
+          } else {
+            toast(err, {
+              theme: "colored",
+              type: "warning",
+            })
+          }
+        } catch (error) {
+          console.log(error)
+          if (error.response && error.response.status != "404") {
+            return toast(error.response?.data?.err, {
+              theme: "colored",
+              type: "error"
+            })
+          }
+          toast("Unable to connect to servers check your internet and try again", {
+            theme: "colored",
+            type: "error"
+          })
+        } finally {
+          setLoading(false)
+        }
+      }}>
         <div className="grid md:grid-cols-1 md:gap-6">
           <div className="relative z-0 w-full mb-5 group">
             <input
               type="text"
-              name="floating_first_name"
+              name="name"
               id="floating_first_name"
               className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
               placeholder=" "
               required
+              onChange={handleChange}
+              value={formData.name}
             />
             <label
               for="floating_first_name"
@@ -36,11 +80,13 @@ const Attend = () => {
         <div className="relative z-0 w-full mb-5 group">
           <input
             type="email"
-            name="floating_email"
+            name="email"
             id="floating_email"
             className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             placeholder=" "
             required
+            onChange={handleChange}
+            value={formData.email}
           />
           <label
             for="floating_email"
@@ -57,6 +103,8 @@ const Attend = () => {
             className="block appearance-none py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300   dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             placeholder=" "
             required
+            onChange={handleChange}
+            value={formData.phone}
           />
           <label
             for="phone"
@@ -69,11 +117,12 @@ const Attend = () => {
           <div className="relative z-0 w-full mb-5 group">
             <input
               type="text"
-              name="orgname"
+              name="organisation"
               id="orgname"
               className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
               placeholder=" "
-              required
+              onChange={handleChange}
+              value={formData.organisation}
             />
             <label
               for="orgname"
@@ -93,11 +142,15 @@ const Attend = () => {
           <select
             id="countries"
             className="block py-2.5 h-12 w-full text-sm px-2 text-gray-900 bg-transparent border-0 border-b-2 border-gray-300   dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            required
+            onChange={handleChange}
+            value={formData.hearingMethod}
+            name="hearingMethod"
           >
-            <option className="hidden">Select an option</option>
-            <option> Social Media</option>
-            <option>Word of Mouth</option>
-            <option>Other</option>
+            <option className="hidden" value={""}>Select an option</option>
+            <option value={"0"}>Social Media</option>
+            <option value={"1"}>Word of Mouth</option>
+            <option value={"2"}>Other</option>
           </select>
         </div>
 
@@ -106,11 +159,14 @@ const Attend = () => {
 
           <div className="flex items-center mt-3 mb-4">
             <input
-              checked
               id="checkbox-1"
-              type="checkbox"
-              value=""
+              type="radio"
+              value="1"
+              name="regType"
+              required
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              checked={formData.regType == "1"}
+              onChange={handleChange}
             />
             <label
               for="checkbox-1"
@@ -123,9 +179,13 @@ const Attend = () => {
           <div className="flex items-center mb-4">
             <input
               id="checkbox-1"
-              type="checkbox"
-              value=""
+              type="radio"
+              name="regType"
+              value="2"
+              required
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              onChange={handleChange}
+              checked={formData.regType == "2"}
             />
             <label
               for="checkbox-1"
@@ -139,11 +199,12 @@ const Attend = () => {
           <div className="relative z-0 w-full mb-5 group">
             <textarea
               type="text"
-              name="optional"
+              name="notes"
+              onChange={handleChange}
+              value={formData.notes}
               id="optional"
               className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
               placeholder=" "
-              required
               cols={3}
             />
             <label
@@ -156,9 +217,10 @@ const Attend = () => {
         </div>
         <button
           type="submit"
-          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className={`text-white ${loading ? "bg-blue-200" : "bg-blue-700 hover:bg-blue-800"} focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-3`}
+          disabled={loading}
         >
-          Submit
+          {loading ? "Submitting" : "Submit"}
         </button>
       </form>
     </div>
