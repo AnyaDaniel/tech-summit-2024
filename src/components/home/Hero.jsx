@@ -1,11 +1,28 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import Link from "next/link";
 import { FaCalendarAlt } from "react-icons/fa";
 
 const Hero = () => {
-  const isMobile = window.innerWidth <= 640;
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenWidth = () => {
+      setIsMobile(window.innerWidth <= 640);
+    };
+
+    // Initial check
+    checkScreenWidth();
+
+    // Listen for window resize events
+    window.addEventListener("resize", checkScreenWidth);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", checkScreenWidth);
+    };
+  }, []);
 
   const settings = {
     dots: true,
@@ -31,23 +48,13 @@ const Hero = () => {
         </main>
       ) : (
         // Web screen content
-        <>
-          {/* Add your web screen content here */}
-          {/* Example: */}
-          <main className="">
-            <section className="">
-      <main className="">
+        <main className="">
           <section className="">
             <div
-              className={`relative h-[100vh]  lg:h-screen w-full flex items-center justify-center text-center bg-center lg:bg-top lg:bg-cover bg-contain object-cover bg-[url("/hero-four.png")] bg- bg-no-repeat `}
-            >
-             
-            </div>
+              className={`relative h-[100vh] lg:h-screen w-full flex items-center justify-center text-center bg-center lg:bg-top lg:bg-cover bg-contain object-cover bg-[url("/hero-four.png")] bg- bg-no-repeat`}
+            ></div>
           </section>
         </main>
-            </section>
-          </main>
-        </>
       )}
     </div>
   );
