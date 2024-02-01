@@ -93,7 +93,7 @@ const All = () => {
           </div>
         </div>
         <p className="text-[#fff] text-center py-3 font-thin">
-          CEO & CO-founders of Saskatoon Chambers of
+          CEO of Saskatoon Chambers of
           Commerce
         </p>
         <div className="flex justify-center items-center  px-0 l py-2 gap-x-4">
