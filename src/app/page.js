@@ -14,8 +14,8 @@ export default function Home() {
     <>
       <Hero />
       <Buttons/>
-      <Expect/>
       <Deets />
+      <Expect/>
       <About />
    
       <Speakers />
