@@ -28,15 +28,15 @@ const All = () => {
   const socials = [
     {
       sm: <FaFacebookF className="text-lg " />,
-      url: "https://facebook.com/Saskblackbusiness",
+      name: "face"
     },
     {
       sm: <FaTwitter className="text-lg " />,
-      url: "https://twitter.com/Saskblackbusiness",
+      name: "twit"
     },
     {
       sm: <FaInstagram className="text-lg " />,
-      url: "https://instagram.com/Saskblackbusiness",
+      name: "insta"
     },
   ];
   return (
@@ -56,27 +56,19 @@ const All = () => {
           />
 
           <div className=" flex justify-center items-center text-center  group-hover:flex absolute  p-2  bg-red-500 w-full  text-[#fff] bg-opacity-75 bottom-0 text-xl">
-            Chalie Clark 
+            Chalie Clark
           </div>
         </div>
         <p className="text-[#fff] text-center py-3 font-thin">
-          Mayor of Saskatoon. 
+          Mayor of Saskatoon.
         </p>
         <div className="flex justify-center items-center  px-0 l py-2 gap-x-4">
-          {socials.map((social) => (
-            <span
-              key={social.url}
-              onClick={() => {
-                setIsActive(false);
-                // openModal();
-              }}
-              className=" p-2 text-lg flex justify-center items-center "
-            >
-              <Link href={social.url} className="text-[#fff]">
-                {social.sm}
-              </Link>
-            </span>
-          ))}
+          <Link href={"https://www.instagram.com/charlieclarkyxe/"} className="text-[#fff]">
+            <FaInstagram className="text-lg " />
+          </Link>
+          <Link href={"http://linkedin.com/in/charlie-clark-5413a547"} className="text-[#fff]">
+            <FaLinkedinIn className="text-lg " />
+          </Link>
         </div>
       </div>
       <div data-aos="zoom-out-up" data-aos-duration="1000">
@@ -97,20 +89,15 @@ const All = () => {
           Commerce
         </p>
         <div className="flex justify-center items-center  px-0 l py-2 gap-x-4">
-          {socials.map((social) => (
-            <span
-              key={social.url}
-              onClick={() => {
-                setIsActive(false);
-                // openModal();
-              }}
-              className=" p-2 text-lg flex justify-center items-center "
-            >
-              <Link href={social.url} className="text-[#fff]">
-                {social.sm}
-              </Link>
-            </span>
-          ))}
+          <Link href={"https://www.instagram.com/jasonaebig/"} className="text-[#fff]">
+            <FaInstagram className="text-lg " />
+          </Link>
+          <Link href={"http://linkedin.com/in/jason-aebig-02b7681b"} className="text-[#fff]">
+            <FaLinkedinIn className="text-lg " />
+          </Link>
+          <Link href={"https://x.com/JasonAebig?s=20"} className="text-[#fff]">
+            <FaTwitter className="text-lg " />
+          </Link>
         </div>
       </div>
 
@@ -124,32 +111,27 @@ const All = () => {
             width={500}
             height={500}
             className="shadow-md w-full h-72 object-cover"
-            src="/speaker-three.jpg"
+            src="/ugly.jpg"
             alt=""
           />
 
           <div className=" flex justify-center items-center text-center  group-hover:flex absolute  p-2  bg-red-500 w-full  text-[#fff] bg-opacity-75 bottom-0 text-xl">
-          Dr. John Owojori 
+            Dr. John Owojori
           </div>
         </div>
         <p className="text-[#fff] text-center py-3 font-thin">
-         Board Chair, BPES
+          Board Chair, BPES
         </p>
         <div className="flex justify-center items-center  px-0 l py-2 gap-x-4">
-          {socials.map((social) => (
-            <span
-              key={social.url}
-              onClick={() => {
-                setIsActive(false);
-                // openModal();
-              }}
-              className=" p-2 text-lg flex justify-center items-center "
-            >
-              <Link href={social.url} className="text-[#fff]">
-                {social.sm}
-              </Link>
-            </span>
-          ))}
+          <Link href={"https://www.instagram.com/owojorigbenga/"} className="text-[#fff]">
+            <FaInstagram className="text-lg " />
+          </Link>
+          <Link href={"https://www.linkedin.com/in/olugbenga-john-owojori-phd-p-biol-239b52b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bxmj7c89PTW2I5aOOo9zZmQ%3D%3D"} className="text-[#fff]">
+            <FaLinkedinIn className="text-lg " />
+          </Link>
+          <Link href={"https://x.com/DrJohnOwojori?s=20"} className="text-[#fff]">
+            <FaTwitter className="text-lg " />
+          </Link>
         </div>
       </div>
       {/* <div>

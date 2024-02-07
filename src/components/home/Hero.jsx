@@ -3,9 +3,12 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import Link from "next/link";
 import { FaCalendarAlt } from "react-icons/fa";
-
+import Image from "next/image";
+import desktop from "@/images/New Project (1).jpg"
+import mobile from "@/images/mob.png"
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
+
 
   useEffect(() => {
     const checkScreenWidth = () => {
@@ -35,29 +38,33 @@ const Hero = () => {
     pauseOnHover: false,
   };
 
-  return (
-    <div className="overflow-hidden h-screen">
-      {isMobile ? (
-        // Mobile screen content
-        <main className="">
-          <section className="">
-            <div
-              className={`relative h-screen w-full flex items-center justify-center text-center bg-center bg-cover bg-contain object-cover bg-[url("/hero-six.png")] bg-no-repeat`}
-            ></div>
-          </section>
-        </main>
-      ) : (
-        // Web screen content
-        <main className="">
-          <section className="">
-            <div
-              className={`relative h-[100vh] lg:h-screen w-full flex items-center justify-center text-center bg-center lg:bg-top lg:bg-cover bg-contain object-cover bg-[url("/hero-four.png")] bg- bg-no-repeat`}
-            ></div>
-          </section>
-        </main>
-      )}
-    </div>
-  );
+  // return (
+  //   <div className="overflow-hidden h-screen">
+  //     {isMobile ? (
+  //       // Mobile screen content
+  //       <main className="">
+  //         <section className="">
+  //           <div
+  //             className={`relative h-screen w-full flex items-center justify-center text-center bg-center bg-cover bg-contain object-cover bg-[url("/hero-six.png")] bg-no-repeat`}
+  //           ></div>
+  //         </section>
+  //       </main>
+  //     ) : (
+  //       // Web screen content
+  //       <main className="">
+  //         <section className="">
+  //           <div
+  //             className={`relative h-[100vh] lg:h-screen w-full flex items-center justify-center text-center bg-center lg:bg-top lg:bg-cover bg-contain object-cover bg-[url("/hero-four.png")] bg- bg-no-repeat`}
+  //           ></div>
+  //         </section>
+  //       </main>
+  //     )}
+  //   </div>
+  // );
+
+  return <div className="">
+    <Image src={isMobile ? mobile : desktop} className={"mt-[0vh] lg:mt-[1vh] w-full"}/>
+  </div>
 };
 
 export default Hero;
