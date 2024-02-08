@@ -32,7 +32,14 @@ const Sponsor = () => {
             </p>
             <div className="flex flex-col items-center lg:flex-row gap-x-4   ">
               {sponsors.map((sponsor) => (
-                <span key={sponsor.id} className="w-full lg:w-1/3 mb-4 lg:mb-0">
+                <span
+                  key={sponsor.id}
+                  className={`${
+                    sponsor.id == 1 || sponsor.id == 5
+                      ? "w-[50%] lg:w-1/6"
+                      : "w-full lg:w-1/3"
+                  }  mb-4 lg:mb-0`}
+                >
                   <Image
                     width={500}
                     height={500}

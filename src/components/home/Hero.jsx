@@ -63,7 +63,7 @@ const Hero = () => {
   // );
 
   return <div className="">
-    <Image src={isMobile ? mobile : desktop} className={"mt-[0vh] lg:mt-[1vh] w-full"}/>
+    <Image src={isMobile ? mobile : desktop} className={"w-full"} style={{height:`calc(100vh - 50px)`}}/>
   </div>
 };
 

@@ -35,7 +35,7 @@ const Speakers = () => {
         <h4 className="text-[#fff] text-center lg:text-5xl">
           Meet Our Speakers
         </h4>
-        <p className="mt-3 text-white sm:mt-5 text-base  text-center md:mt-5 font-thin  mx-auto">
+        <p className="mt-3 text-white sm:mt-5  text-center md:mt-5 font-thin  mx-auto text-lg">
         Learn from business leaders and visionaries at the Saskatoon Black Business Expo. Our lineup of speakers includes influential figures who will share insights on their business success, community impact, and navigating the entrepreneurial landscape. Gain valuable knowledge and inspiration from those who have paved the way for excellence.
         </p>
       </header>

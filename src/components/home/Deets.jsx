@@ -19,7 +19,7 @@ const Deets = () => {
                 Objectives
               </h1>
 
-              <p className="text-gray-500 text-center">
+              <p className="text-gray-500 text-center text-lg">
                 The primary goal of the Saskatoon Black Business Expo is to
                 showcase and promote Black- owned businesses, fostering
                 networking, collaboration, and economic empowerment within the
