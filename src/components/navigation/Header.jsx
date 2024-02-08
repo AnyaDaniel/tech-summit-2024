@@ -34,7 +34,7 @@ const links = [
   { href: "/exhibitor", label: "Exhibit", id: 3 },
 
   { href: "/volunteer", label: "Get Involved ", id: 5 },
-  { href: "/#about", label: "About", id: 2 },
+  { href: "/", label: "About", id: 2 },
   { href: "/contact", label: "Contact", id: 3 },
  
 ];
@@ -104,8 +104,8 @@ const Header = () => {
     <nav
       className={
         nav
-          ? `${styles.nav}  ${styles.fixedTop} top-0  z-[1000] shadow-[0_3px_10px_rgb(0,0,0,0.2)]  backdrop-blur-sm bg-[#fff] `
-          : `${styles.nav} ${styles.fixedTop} top-0  z-[1000] shadow-[0_3px_10px_rgb(0,0,0,0.2)]   backdrop-blur-sm bg-[#fff]  `
+          ? `${styles.nav}  ${styles.fixedTop} top-0  z-[1000] shadow-[0_3px_10px_rgb(0,0,0,0.2)]  backdrop-blur-sm bg-[#fff]`
+          : `${styles.nav} ${styles.fixedTop} top-0  z-[1000] shadow-[0_3px_10px_rgb(0,0,0,0.2)]   backdrop-blur-sm bg-[#fff] `
       }
     >
       <div className="lg:max-w-[1440px] w-full px-4 py-6 mx-auto ">

@@ -11,8 +11,8 @@ const Deets = () => {
   }, []);
   return (
     <div className="max-w-[1440px] mx-auto">
-      <div className="pricing-table-2 bg-[#fff] py-6 md:py-10">
-        <div className=" mx-auto px-4 lg:px-20">
+      <div className="pricing-table-2 bg-[#fff] py-2">
+        <div className=" mx-auto">
           <div className="flex justify-between flex-col lg:flex-row items-start lg:gap-x-">
             <div className=" mx-auto">
               <h1 className="text-4xl md:text-5xl text-center font-semibold text-black mb-4 md:mb-6">
@@ -46,14 +46,14 @@ const Deets = () => {
                 </div> */}
                 <div className="p-6">
                   <ul className="leading-loose text-[#fff]">
-                    <li>experience black owned businesses</li>
+                    <li>Experience black owned businesses</li>
                     {/* <li>Show your brand</li>
                     <li>Find out more</li> */}
                   </ul>
                   <div className="mt-6 py-4 flex justify-center">
                     <Link
                       href="/attend"
-                      className="text-white  flex justify-center items-center py-2 px-4 bg-[#0A5AEE]  lg:w-auto lg:h-[40px] text-sm lg:text-lg"
+                      className="text-white  flex justify-center items-center py-2 px-4 bg-[#1D3466] lg:w-auto lg:h-[40px] text-sm lg:text-lg"
                     >
                       Attend
                     </Link>
@@ -85,7 +85,7 @@ const Deets = () => {
                   <div className="mt-6 py-4 flex justify-center">
                     <Link
                       href="/exhibitor"
-                      className="text-white  flex justify-center items-center py-2 px-4 bg-[#0A5AEE]  lg:w-auto lg:h-[40px] text-sm lg:text-lg"
+                      className="text-white  flex justify-center items-center py-2 px-4 bg-[#1D3466]  lg:w-auto lg:h-[40px] text-sm lg:text-lg"
                     >
                       Exhibit
                     </Link>
@@ -120,7 +120,7 @@ const Deets = () => {
                   <div className="mt-6 py-4 flex justify-center">
                     <Link
                       href="/volunteer"
-                      className="text-white  flex justify-center items-center py-2 px-4 bg-[#0A5AEE]  lg:w-auto lg:h-[40px] text-sm lg:text-lg"
+                      className="text-white  flex justify-center items-center py-2 px-4 bg-[#1D3466]  lg:w-auto lg:h-[40px] text-sm lg:text-lg"
                     >
                       Volunteer
                     </Link>

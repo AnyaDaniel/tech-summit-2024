@@ -12,10 +12,11 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
+    <div className="pb-[50px]"></div>
       <Hero />
       <Buttons/>
-      <Expect/>
       <Deets />
+      <Expect/>
       <About />
    
       <Speakers />

@@ -2,7 +2,7 @@ import React from "react";
 
 const Expect = () => {
   return (
-    <div className="lg:my-10 my-5 lg:px-40 px-4">
+    <div className="lg:my-10 my-5 lg:px-10 px-4">
         <h1 className="text-4xl md:text-5xl text-center font-semibold text-black mb-4 md:mb-6">
         What to Expect
       </h1> 
@@ -19,7 +19,7 @@ const Expect = () => {
         Empowerment{" "}
         </span>
       </div>
-      <p className="text-gray-500 max-w-3xl mx-auto text-center">
+      <p className="text-gray-500 mx-auto text-center text-lg">
         Immerse yourself in a dynamic environment celebrating black-owned
         businesses. Discover a vibrant showcase of excellence at the Saskatoon
         Black Business Expo!. Expect a diverse range of products and services,

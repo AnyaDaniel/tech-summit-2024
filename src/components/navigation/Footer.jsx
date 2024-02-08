@@ -270,7 +270,7 @@ const Footer = () => {
                   Social Media
                 </h1>
 
-                <div className="flex flex-row gap-2 lg:justify-start justify-center">
+                <div className="flex flex-row gap-2 lg:justify-start justify-center ">
                   <Link
                     href="https://facebook.com/Saskblackbusiness"
                     target="_blank"
@@ -306,7 +306,7 @@ const Footer = () => {
                     </svg>
                   </Link>
                   <Link
-                    href="https://twitter.com/Saskblackbusiness"
+                    href="http://twitter.com/saskblackbiz"
                     target="_blank"
                   >
                     <svg
@@ -317,7 +317,7 @@ const Footer = () => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <g opacity="0.5" clipPath="url(#clip0_391_8856)">
+                      <g clipPath="url(#clip0_391_8856)">
                         <path
                           d="M22.7188 0.141602C10.1867 0.141602 -0.0107422 10.6971 -0.0107422 23.6744C-0.0107422 36.6516 10.1867 47.2071 22.7188 47.2071C35.2509 47.2071 45.4484 36.6516 45.4484 23.6744C45.4484 10.6971 35.2509 0.141602 22.7188 0.141602ZM22.7188 45.6396C11.0216 45.6396 1.50598 35.7856 1.50598 23.6744C1.50598 11.5631 11.0216 1.70908 22.7188 1.70908C34.416 1.70908 43.9316 11.5631 43.9316 23.6744C43.9316 35.7856 34.416 45.6396 22.7188 45.6396Z"
                           fill="#DC2626"
@@ -340,7 +340,7 @@ const Footer = () => {
                     </svg>
                   </Link>
                   <Link
-                    href="https://instagram.com/Saskblackbusiness"
+                    href="https://www.instagram.com/saskblackbusiness?igsh=MWN6aHdsN3g5MjNpNA%3D%3D&utm_source=qr"
                     target="_blank"
                   >
                     <svg
@@ -351,7 +351,7 @@ const Footer = () => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <g opacity="0.5" clipPath="url(#clip0_391_8847)">
+                      <g clipPath="url(#clip0_391_8847)"> 
                         <path
                           d="M29.1696 18.5291C29.9655 18.5291 30.6107 17.8611 30.6107 17.037C30.6107 16.213 29.9655 15.5449 29.1696 15.5449C28.3737 15.5449 27.7285 16.213 27.7285 17.037C27.7285 17.8611 28.3737 18.5291 29.1696 18.5291Z"
                           fill="#DC2626"
