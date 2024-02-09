@@ -10,7 +10,7 @@ const ContactUs = () => {
               Contact
             </p>
             <h3 className="text-3xl lg:text-6xl leading-normal font-extrabold tracking-tight text-gray-900">
-              Get In <span className="text-indigo-600">Touch</span>
+              Get In <span className="text-red-600">Touch</span>
             </h3>
           </div>
 
@@ -113,7 +113,7 @@ const ContactUs = () => {
                   </label>
                 </div>
                 <button
-                  className="shadow bg-indigo-600 hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
+                  className="shadow bg-[#1D3466] hover:bg-blue-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
                   type="submit"
                 >
                   Send Message
