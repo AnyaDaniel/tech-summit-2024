@@ -41,13 +41,13 @@ const data = [
   {
     question: "Are there opportunities for media coverage or press passes?",
     answer:
-      "Media inquiries and press pass requests can be directed to our Media Relations Team (info@saskblackbusiness.ca) We welcome coverage that highlights the impact of Black entrepreneurship.",
+      "Media inquiries and press pass requests can be directed to our <a href='/contact' class='text-blue-700 underline'> Media Relations Team</a> We welcome coverage that highlights the impact of Black entrepreneurship.",
   },
   {
     question:
       "How can I contact the event organizers for additional questions?",
     answer:
-      "For any further inquiries, feel free to reach out to our dedicated Support Team (info@saskblackbusiness.ca). We're here to assist you and ensure you have a fantastic experience at the Black Business Expo!",
+      "For any further inquiries, feel free to reach out to our dedicated <a href='/contact' class='text-blue-700 underline'>Support Team</a> We're here to assist you and ensure you have a fantastic experience at the Black Business Expo!",
   },
 ];
 

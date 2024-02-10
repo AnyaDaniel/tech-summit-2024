@@ -4,7 +4,7 @@ import React from "react";
 const Volunteer = () => {
   return (
     <div className="mt-32 lg:mt-40 lg:mb-20">
-       <div className=" flex items-center justify-center gap-x-3 text-2xl md:text-3xl text-center font-semibold text-black mb-4 md:mb-6">
+      <div className=" flex items-center justify-center gap-x-3 text-2xl md:text-3xl text-center font-semibold text-black mb-4 md:mb-6">
         <Image
           className="w-auto h-auto  object-cover"
           src="/logo.png"
@@ -91,7 +91,6 @@ const Volunteer = () => {
 
           <div className="flex items-center mt-3 mb-4">
             <input
-              checked
               id="checkbox-1"
               type="checkbox"
               value=""
@@ -175,7 +174,7 @@ const Volunteer = () => {
             for="floating_email"
             className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
           >
-          Previous Volunteer Experience (if any)
+            Previous Volunteer Experience (if any)
           </label>
         </div>
         <div className="relative z-0 w-full mb-5 group">
@@ -191,7 +190,7 @@ const Volunteer = () => {
             for="floating_email"
             className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
           >
-          Why do you want to volunteer for the Black Business Expo?
+            Why do you want to volunteer for the Black Business Expo?
           </label>
         </div>
         <button
