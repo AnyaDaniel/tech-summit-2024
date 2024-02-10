@@ -5,7 +5,7 @@ import Link from "next/link";
 import { FaCalendarAlt } from "react-icons/fa";
 import Image from "next/image";
 import desktop from "@/images/New Project (1).jpg"
-import mobile from "@/images/mob.png"
+import mobile from "@/images/New Project.png"
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
 
