@@ -29,7 +29,7 @@ const Speakers = () => {
   return (
     <section
       id="Speakers"
-      className='mt-10 min-w-full  flex flex-col  min-h-screen py-10 lg:py-20 mb-12 bg-[#DD0042] bg-no-repeat'
+      className='mt-10 min-w-full  flex flex-col  py-10 lg:py-20 mb-12 bg-[#DD0042] bg-no-repeat'
     >
       <header className="section-head-parallax ">
         <h4 className="text-[#fff] text-center lg:text-5xl">

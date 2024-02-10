@@ -131,7 +131,7 @@ const All = () => {
           </div>
         </div>
         <p className="text-[#fff] text-center py-3 font-thin">
-          Board Chair, BPES
+          Board Chair, Black Professionals and Entrepreneurs of Saskatoon
         </p>
         <div className="flex justify-center items-center  px-0 l py-2 gap-x-4">
           {/* <Link
@@ -140,7 +140,7 @@ const All = () => {
           >
             <FaInstagram className="text-lg " />
           </Link> */}
-           <Link
+          <Link
             href={
               "https://www.linkedin.com/in/olugbenga-john-owojori-phd-p-biol-239b52b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bxmj7c89PTW2I5aOOo9zZmQ%3D%3D"
             }
