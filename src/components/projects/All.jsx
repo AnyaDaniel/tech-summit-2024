@@ -60,21 +60,21 @@ const All = () => {
           </div>
         </div>
         <p className="text-[#fff] text-center py-3 font-thin">
-          Mayor of Saskatoon
-      </p>
+          Mayor, City of Saskatoon
+        </p>
         <div className="flex justify-center items-center  px-0 l py-2 gap-x-4">
-          <Link
+          {/* <Link
             href={"https://www.instagram.com/charlieclarkyxe/"}
             className="text-[#fff]"
           >
             <FaInstagram className="text-lg " />
-          </Link>
-          {/* <Link
+          </Link> */}
+          <Link
             href={"http://linkedin.com/in/charlie-clark-5413a547"}
             className="text-[#fff]"
           >
             <FaLinkedinIn className="text-lg " />
-          </Link> */}
+          </Link>
         </div>
       </div>
       <div data-aos="zoom-out-up" data-aos-duration="1000">
@@ -91,22 +91,22 @@ const All = () => {
           </div>
         </div>
         <p className="text-[#fff] text-center py-3 font-thin">
-          CEO Saskatoon Chambers of Commerce
+          CEO, Saskatoon Chamber of Commerce
         </p>
         <div className="flex justify-center items-center  px-0 l py-2 gap-x-4">
-          <Link
+          {/* <Link
             href={"https://www.instagram.com/jasonaebig/"}
             className="text-[#fff]"
           >
             <FaInstagram className="text-lg " />
-          </Link>
-          {/* <Link
+          </Link> */}
+          <Link
             href={"http://linkedin.com/in/jason-aebig-02b7681b"}
             className="text-[#fff]"
           >
             <FaLinkedinIn className="text-lg " />
           </Link>
-          <Link href={"https://x.com/JasonAebig?s=20"} className="text-[#fff]">
+          {/* <Link href={"https://x.com/JasonAebig?s=20"} className="text-[#fff]">
             <FaTwitter className="text-lg " />
           </Link> */}
         </div>
@@ -134,13 +134,13 @@ const All = () => {
           Board Chair, BPES
         </p>
         <div className="flex justify-center items-center  px-0 l py-2 gap-x-4">
-          <Link
+          {/* <Link
             href={"https://www.instagram.com/owojorigbenga/"}
             className="text-[#fff]"
           >
             <FaInstagram className="text-lg " />
-          </Link>
-          {/* <Link
+          </Link> */}
+           <Link
             href={
               "https://www.linkedin.com/in/olugbenga-john-owojori-phd-p-biol-239b52b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bxmj7c89PTW2I5aOOo9zZmQ%3D%3D"
             }
@@ -148,12 +148,12 @@ const All = () => {
           >
             <FaLinkedinIn className="text-lg " />
           </Link>
-          <Link
+          {/* <Link
             href={"https://x.com/DrJohnOwojori?s=20"}
             className="text-[#fff]"
           >
             <FaTwitter className="text-lg " />
-          </Link> */}
+          </Link>  */}
         </div>
       </div>
       {/* <div>

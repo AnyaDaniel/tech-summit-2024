@@ -31,7 +31,7 @@ const Footer = () => {
 
               <p className="text-[#fff]  text-sm font-extralight lg:max-w-lg lg:text-left text-center">
                 The primary goal of the Saskatoon Black Business Expo is to
-                showcase and promote businesses, fostering
+                showcase and promote Black-owned  businesses, fostering
                 networking, collaboration, and economic empowerment within the
                 community. The event aims to provide a platform for
                 entrepreneurs to connect with other businesses, consumers,
@@ -265,9 +265,9 @@ const Footer = () => {
 
                     <li className="mb-2 pb-2 lg:text-left text-center">
                       <span className="flex gap-2 items-center justify-center lg:justify-start">
-                        <a className="  text-[#fff] font-thin   text-lg lg:text-left text-center">
-                          Get in Touch: info@saskblackbusiness.ca
-                        </a>
+                        <Link href="/contact" className="  text-[#fff] font-thin   text-lg lg:text-left text-center">
+                          Get in Touch
+                        </Link>
                       </span>
                     </li>
                   </ul>

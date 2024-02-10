@@ -45,7 +45,7 @@ const Buttons = () => {
           href="/sponsorship"
           className="rounded-lg flex justify-center items-center px-8 py-2 text-xl bg-[#1D3466] text-[#fff] hover:bg-blue-600 duration-300 w-full"
         >
-        Sponsorship
+        Sponsor
         </Link>
       </div>
       <div
