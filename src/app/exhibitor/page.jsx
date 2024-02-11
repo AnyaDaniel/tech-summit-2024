@@ -58,7 +58,7 @@ const Exhibitor = () => {
                 regType: null,
                 notes: "",
               });
-              window.location = "https://buy.stripe.com/28o4iJgLMeXRe5i000"
+              window.location = "https://buy.stripe.com/28o4iJgLMeXRe5i000";
             } else {
               toast(err, {
                 theme: "colored",
@@ -260,8 +260,8 @@ const Exhibitor = () => {
             Regular price is <b>$150</b>
           </li>
           <li>
-            All booths are the same price each booth comes with a table and 2
-            chairs
+            All booths will cost the same and come with a table and two chairs
+            each
           </li>
         </ul>
       </form>
