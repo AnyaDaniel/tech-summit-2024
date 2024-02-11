@@ -167,11 +167,11 @@ const Footer = () => {
                   <h1 className="text-[#fff]  pt-5 text-sm lg:text-left text-left">
                     All rights reserved © {year}
                   </h1>
-                  <a href="">
+                  {/* <a href="">
                     <h1 className="text-[#fff]  pt-5 text-sm lg:text-left text-left">
                       DEVELOPED BY NET-TRIX SOLUTIONS INC.
                     </h1>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -392,7 +392,6 @@ const Footer = () => {
                 </h1>
                 <a href="https://net-trix.ca/">
                   <h1 className="text-[#fff] pt-5 text-sm lg:text-left text-center">
-                    Developed By NET-TRIX SOLUTIONS INC.
                   </h1>
                 </a>
               </div>
