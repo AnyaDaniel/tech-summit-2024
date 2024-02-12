@@ -29,13 +29,13 @@ const Speakers = () => {
   return (
     <section
       id="Speakers"
-      className='mt-10 min-w-full  flex flex-col  min-h-screen py-10 lg:py-20 mb-12 bg-[#DD0042] bg-no-repeat'
+      className='mt-10 min-w-full  flex flex-col  py-10 lg:py-20 mb-12 bg-[#DD0042] bg-no-repeat'
     >
       <header className="section-head-parallax ">
         <h4 className="text-[#fff] text-center lg:text-5xl">
           Meet Our Speakers
         </h4>
-        <p className="mt-3 text-white sm:mt-5 text-base  text-center md:mt-5 font-thin  mx-auto">
+        <p className="mt-3 text-white sm:mt-5  text-center md:mt-5 font-thin  mx-auto text-lg">
         Learn from business leaders and visionaries at the Saskatoon Black Business Expo. Our lineup of speakers includes influential figures who will share insights on their business success, community impact, and navigating the entrepreneurial landscape. Gain valuable knowledge and inspiration from those who have paved the way for excellence.
         </p>
       </header>
@@ -55,7 +55,7 @@ const Speakers = () => {
         ))}
       </ul> */}
 
-      <div className="lg:px-40  pt-10  px-4  overflow-hidden  text-clip">
+      <div className="px-5 lg:px-10 overflow-hidden  text-clip">
         <All />
       </div>
     </section>

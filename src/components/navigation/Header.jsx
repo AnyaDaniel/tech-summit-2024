@@ -34,7 +34,7 @@ const links = [
   { href: "/exhibitor", label: "Exhibit", id: 3 },
 
   { href: "/volunteer", label: "Get Involved ", id: 5 },
-  { href: "/", label: "About", id: 2 },
+  // { href: "/", label: "About", id: 2 },
   { href: "/contact", label: "Contact", id: 3 },
  
 ];
