@@ -83,7 +83,7 @@ const All = () => {
             width={500}
             height={500}
             className="shadow-md w-full object-cover aspect-square"
-            src="/speaker-one.jpg"
+            src="/speaker1.jpg"
             alt=""
           />
           <div className=" flex justify-center items-center text-center  group-hover:flex absolute  p-2  bg-red-500 w-full  text-[#fff] bg-opacity-75 bottom-0 text-xl">
@@ -131,7 +131,7 @@ const All = () => {
           </div>
         </div>
         <p className="text-[#fff] text-center py-3 font-thin">
-          Co-convener, Noblelinks Consulting
+           Facilitator - Nobkelinks Consulting
         </p>
         <div className="flex justify-center items-center  px-0 l py-2 gap-x-4">
           {/* <Link
@@ -176,7 +176,7 @@ const All = () => {
           </div>
         </div>
         <p className="text-[#fff] text-center py-3 font-thin">
-          Co-convener, Noblelinks Consulting
+           Facilitator - Nobkelinks Consulting
         </p>
         <div className="flex justify-center items-center  px-0 l py-2 gap-x-4">
           {/* <Link
@@ -187,7 +187,7 @@ const All = () => {
           </Link> */}
           <Link
             href={
-              "https://www.linkedin.com/in/olugbenga-john-owojori-phd-p-biol-239b52b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bxmj7c89PTW2I5aOOo9zZmQ%3D%3D"
+              "https://www.linkedin.com/in/tosin-fetuga-pmp?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
             }
             className="text-[#fff]"
           >
