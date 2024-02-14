@@ -263,13 +263,13 @@ const Footer = () => {
                       </span>
                     </li>
 
-                    {/* <li className="mb-2 pb-2 lg:text-left text-center">
+                    <li className="mb-2 pb-2 lg:text-left text-center">
                       <span className="flex gap-2 items-center justify-center lg:justify-start">
                         <Link href="/contact" className="  text-[#fff] font-thin   text-lg lg:text-left text-center">
                           Get in Touch
                         </Link>
                       </span>
-                    </li> */}
+                    </li>
                   </ul>
                 </div>
               </div>
