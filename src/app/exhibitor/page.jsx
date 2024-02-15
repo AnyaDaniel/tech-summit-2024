@@ -58,7 +58,7 @@ const Exhibitor = () => {
                 regType: null,
                 notes: "",
               });
-              // window.location = "https://buy.stripe.com/28o4iJgLMeXRe5i000";
+              window.location = "https://buy.stripe.com/28o4iJgLMeXRe5i000";
             } else {
               toast(err, {
                 theme: "colored",
