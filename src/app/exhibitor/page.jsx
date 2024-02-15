@@ -10,7 +10,7 @@ const Exhibitor = () => {
     name: "",
     email: "",
     phone: "",
-    organisation: "",
+    organization: "",
     url: "",
     boothSize: null,
     description: "",
@@ -58,7 +58,7 @@ const Exhibitor = () => {
                 regType: null,
                 notes: "",
               });
-              window.location = "https://buy.stripe.com/28o4iJgLMeXRe5i000";
+              // window.location = "https://buy.stripe.com/28o4iJgLMeXRe5i000";
             } else {
               toast(err, {
                 theme: "colored",
@@ -89,13 +89,13 @@ const Exhibitor = () => {
           <div className="relative z-0 w-full mb-5 group">
             <input
               type="text"
-              name="organisation"
+              name="organization"
               id="floating_first_name"
               className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
               placeholder=" "
               required
               onChange={handleChange}
-              value={formData.organisation}
+              value={formData.organization}
             />
             <label
               for="floating_first_name"
