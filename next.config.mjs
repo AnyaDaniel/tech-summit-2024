@@ -8,6 +8,7 @@ const nextConfig = {
       {
         source: '/api/:path*',
         destination: 'https://skbb.net-trix.ca/:path*',
+        // destination: 'http://localhost:3002/:path*',
       },
     ]
   }
