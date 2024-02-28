@@ -40,7 +40,7 @@ const All = () => {
     },
   ];
   return (
-    <div className=" grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-10 ">
+    <div className=" grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-10 pt-4">
       <div
         data-aos="flip-right"
         data-aos-easing="ease-out-cubic"
@@ -51,7 +51,7 @@ const All = () => {
             width={500}
             height={500}
             className="shadow-md w-full object-cover aspect-square"
-            src="/speaker-two.jpg"
+            src="/clark.jpg"
             alt=""
           />
 
@@ -131,7 +131,7 @@ const All = () => {
           </div>
         </div>
         <p className="text-[#fff] text-center py-3 font-thin">
-           Facilitator - Nobkelinks Consulting
+           Facilitator - Noblelinks Consulting
         </p>
         <div className="flex justify-center items-center  px-0 l py-2 gap-x-4">
           {/* <Link
@@ -176,7 +176,7 @@ const All = () => {
           </div>
         </div>
         <p className="text-[#fff] text-center py-3 font-thin">
-           Facilitator - Nobkelinks Consulting
+           Facilitator - Noblelinks Consulting
         </p>
         <div className="flex justify-center items-center  px-0 l py-2 gap-x-4">
           {/* <Link

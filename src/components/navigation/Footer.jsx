@@ -53,7 +53,7 @@ const Footer = () => {
                     Social Media
                   </h1>
                   <div className="flex flex-row gap-2 lg:justify-start justify-center ">
-                    <Link
+                    {/* <Link
                       href="https://facebook.com/Saskblackbusiness"
                       target="_blank"
                     >
@@ -86,7 +86,7 @@ const Footer = () => {
                           </clipPath>
                         </defs>
                       </svg>
-                    </Link>
+                    </Link> */}
                     <Link
                       href="http://twitter.com/saskblackbiz"
                       target="_blank"
@@ -255,10 +255,10 @@ const Footer = () => {
                     <li className="mb-2 pb-2 lg:text-left text-center">
                       <span className="flex gap-2 items-center justify-center lg:justify-start">
                         <Link
-                          href="mailto:dreamcarescltd@gmail.com"
+                          href="/contact"
                           className="  text-[#fff] font-thin  text-lg lg:text-left text-center"
                         >
-                          Help & Supports
+                         Contact Us
                         </Link>
                       </span>
                     </li>
@@ -279,7 +279,7 @@ const Footer = () => {
                 </h1>
 
                 <div className="flex flex-row gap-2 lg:justify-start justify-center ">
-                  <Link
+                  {/* <Link
                     href="https://facebook.com/Saskblackbusiness"
                     target="_blank"
                   >
@@ -312,7 +312,7 @@ const Footer = () => {
                         </clipPath>
                       </defs>
                     </svg>
-                  </Link>
+                  </Link> */}
                   <Link href="http://twitter.com/saskblackbiz" target="_blank">
                     <svg
                       className="w-10 h-10"

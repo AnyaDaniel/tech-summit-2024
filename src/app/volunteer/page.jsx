@@ -2,6 +2,7 @@
 import axios from "axios";
 import Image from "next/image";
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const Volunteer = () => {
   const [loading, setLoading] = useState(false);
@@ -46,7 +47,7 @@ const Volunteer = () => {
           e.preventDefault();
           try {
             setLoading(true);
-            const { data, err } = await axios.post("/api/exhibitor", formData);
+            const { data, err } = await axios.post("/api/volunteer", formData);
             if (!err) {
               toast("Vulunteer Registration form sent successfully", {
                 theme: "colored",
