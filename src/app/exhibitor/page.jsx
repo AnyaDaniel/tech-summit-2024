@@ -58,7 +58,7 @@ const Exhibitor = () => {
                 regType: null,
                 notes: "",
               });
-              window.location = "https://buy.stripe.com/28o4iJgLMeXRe5i000";
+              window.location = "https://buy.stripe.com/dR66qRfHIg1VbXacMN";
             } else {
               toast(err, {
                 theme: "colored",
@@ -253,9 +253,6 @@ const Exhibitor = () => {
           {loading ? "Submitting" : "Submit"}
         </button>
         <ul className="list-disk">
-          <li>
-            Early bird price: <b>$100</b> - Pay before February 25, 2024
-          </li>
           <li>
             Regular price is <b>$150</b>
           </li>
