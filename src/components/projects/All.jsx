@@ -231,7 +231,7 @@ const All = () => {
           </Link> */}
           <Link
             href={
-              "linkedin.com/in/randy-weekes-8b2b025b"
+              "https://linkedin.com/in/randy-weekes-8b2b025b"
             }
             className="text-[#fff]"
           >
