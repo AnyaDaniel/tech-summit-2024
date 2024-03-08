@@ -58,7 +58,7 @@ const Exhibitor = () => {
                 regType: null,
                 notes: "",
               });
-              window.location = "https://buy.stripe.com/dR66qRfHIg1VbXacMN";
+              window.location = "https://buy.stripe.com/28o4iJgLMeXRe5i000";
             } else {
               toast(err, {
                 theme: "colored",
@@ -254,7 +254,7 @@ const Exhibitor = () => {
         </button>
         <ul className="list-disk">
           <li>
-            Regular price is <b>$150</b>
+            Regular price is <b>$100</b>
           </li>
           <li>
             All booths will cost the same and come with a table and two chairs
