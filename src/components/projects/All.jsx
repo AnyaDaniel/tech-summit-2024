@@ -56,11 +56,11 @@ const All = () => {
           />
 
           <div className=" flex justify-center items-center text-center  group-hover:flex absolute  p-2  bg-red-500 w-full  text-[#fff] bg-opacity-75 bottom-0 text-xl">
-            Chalie Clark
+             Bev Dubois
           </div>
         </div>
         <p className="text-[#fff] text-center py-3 font-thin">
-          Mayor, City of Saskatoon
+          Deputy Mayor, City of Saskatoon
         </p>
         <div className="flex justify-center items-center  px-0 l py-2 gap-x-4">
           {/* <Link
@@ -70,7 +70,7 @@ const All = () => {
             <FaInstagram className="text-lg " />
           </Link> */}
           <Link
-            href={"http://linkedin.com/in/charlie-clark-5413a547"}
+            href={"http://linkedin.com/in/bev-dubois-37054495"}
             className="text-[#fff]"
           >
             <FaLinkedinIn className="text-lg " />
