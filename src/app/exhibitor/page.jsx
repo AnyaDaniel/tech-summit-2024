@@ -243,7 +243,7 @@ const Exhibitor = () => {
             </label>
           </div>
         </div>
-        <button
+        {/* <button
           type="submit"
           className={`text-white ${
             loading ? "bg-blue-200" : "bg-blue-700 hover:bg-blue-800"
@@ -251,7 +251,7 @@ const Exhibitor = () => {
           disabled={loading}
         >
           {loading ? "Submitting" : "Submit"}
-        </button>
+        </button> */}
         <ul className="list-disk">
           <li>
             Regular price is <b>$100</b>
