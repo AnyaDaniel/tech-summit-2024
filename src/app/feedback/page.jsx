@@ -138,164 +138,169 @@ const Attend = () => {
           </select>
         </div>
 {/* Event Organisation */}
-        <div className="mt-3 mb-3">
-            <p className="mb-3 mt-5">Event Organization</p>
-          <label className="text-gray-400 mb-4">Rate the organization and planning of the event:</label>
+<div className="mt-3 mb-3">
+    <p className="mb-3 mt-5">Event Organization</p>
+    <label className="text-gray-400 mb-4">Rate the organization and planning of the event:</label>
 
-          <div className="flex items-center mt-3 mb-4">
-            <input
-              id="checkbox-1"
-              type="radio"
-              value="1"
-              name="regType"
-              required
-              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-              checked={formData.regType == "1"}
-              onChange={handleChange}
-            />
-            <label
-              for="checkbox-1"
-              className="ms-2 text-sm font-medium text-gray-900 "
-            >
-              Excellent
-            </label>
-          </div>
+    <div className="flex items-center mt-3 mb-4">
+        <input
+            id="checkbox-1"
+            type="radio"
+            value="1"
+            name="organizationRating"
+            required
+            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            checked={formData.organizationRating === "1"}
+            onChange={handleChange}
+        />
+        <label
+            htmlFor="checkbox-1"
+            className="ms-2 text-sm font-medium text-gray-900"
+        >
+            Excellent
+        </label>
+    </div>
 
-          <div className="flex items-center mb-4">
-            <input
-              id="checkbox-1"
-              type="radio"
-              name="regType"
-              value="2"
-              required
-              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-              onChange={handleChange}
-              checked={formData.regType == "2"}
-            />
-            <label
-              for="checkbox-1"
-              className="ms-2 text-sm font-medium text-gray-900 "
-            >
-              Good
-            </label>
-          </div>
-          <div className="flex items-center mb-4">
-            <input
-              id="checkbox-3"
-              type="radio"
-              name="regType"
-              value="2"
-              required
-              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-              onChange={handleChange}
-              checked={formData.regType == "2"}
-            />
-            <label
-              for="checkbox-1"
-              className="ms-2 text-sm font-medium text-gray-900 "
-            >
-              Fair
-            </label>
-          </div>
-          <div className="flex items-center mb-4">
-            <input
-              id="checkbox-3"
-              type="radio"
-              name="regType"
-              value="2"
-              required
-              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-              onChange={handleChange}
-              checked={formData.regType == "2"}
-            />
-            <label
-              for="checkbox-1"
-              className="ms-2 text-sm font-medium text-gray-900 "
-            >
-              Poor
-            </label>
-          </div>
-        </div>
+    <div className="flex items-center mb-4">
+        <input
+            id="checkbox-2"
+            type="radio"
+            name="organizationRating"
+            value="2"
+            required
+            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            checked={formData.organizationRating === "2"}
+            onChange={handleChange}
+        />
+        <label
+            htmlFor="checkbox-2"
+            className="ms-2 text-sm font-medium text-gray-900"
+        >
+            Good
+        </label>
+    </div>
+
+    <div className="flex items-center mb-4">
+        <input
+            id="checkbox-3"
+            type="radio"
+            name="organizationRating"
+            value="3"
+            required
+            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            checked={formData.organizationRating === "3"}
+            onChange={handleChange}
+        />
+        <label
+            htmlFor="checkbox-3"
+            className="ms-2 text-sm font-medium text-gray-900"
+        >
+            Fair
+        </label>
+    </div>
+
+    <div className="flex items-center mb-4">
+        <input
+            id="checkbox-4"
+            type="radio"
+            name="organizationRating"
+            value="4"
+            required
+            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            checked={formData.organizationRating === "4"}
+            onChange={handleChange}
+        />
+        <label
+            htmlFor="checkbox-4"
+            className="ms-2 text-sm font-medium text-gray-900"
+        >
+            Poor
+        </label>
+    </div>
+</div>
+
         <hr />
 {/* How would you rate the venue where the event took place? */}
-        <div>
-            <p className="mb-3 mt-3">Venue</p>
-          <label className="text-gray-400 mb-4">How would you rate the venue where the event took place:</label>
+    <div>
+        <p className="mb-3 mt-3">Venue</p>
+        <label className="text-gray-400 mb-4">How would you rate the venue where the event took place:</label>
 
-          <div className="flex items-center mt-3 mb-4">
+        <div className="flex items-center mt-3 mb-4">
             <input
-              id="checkbox-excelent"
-              type="radio"
-              value="1"
-              name="regType"
-              required
-              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-              checked={formData.regType == "1"}
-              onChange={handleChange}
+                id="checkbox-excellent"
+                type="radio"
+                value="excellent"
+                name="venueRating"
+                required
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                checked={formData.venueRating === "excellent"}
+                onChange={handleChange}
             />
             <label
-              for="checkbox-excelent"
-              className="ms-2 text-sm font-medium text-gray-900 "
+                htmlFor="checkbox-excellent"
+                className="ms-2 text-sm font-medium text-gray-900"
             >
-              Excellent
+                Excellent
             </label>
-          </div>
-
-          <div className="flex items-center mb-4">
-            <input
-              id="checkbox-good"
-              type="radio"
-              name="regType"
-              value="2"
-              required
-              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-              onChange={handleChange}
-              checked={formData.regType == "2"}
-            />
-            <label
-              for="checkbox-good"
-              className="ms-2 text-sm font-medium text-gray-900 "
-            >
-              Good
-            </label>
-          </div>
-          <div className="flex items-center mb-4">
-            <input
-              id="checkbox-fair"
-              type="radio"
-              name="regType"
-              value="2"
-              required
-              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-              onChange={handleChange}
-              checked={formData.regType == "2"}
-            />
-            <label
-              for="checkbox-fair"
-              className="ms-2 text-sm font-medium text-gray-900 "
-            >
-              Fair
-            </label>
-          </div>
-          <div className="flex items-center mb-4">
-            <input
-              id="checkbox-poor"
-              type="radio"
-              name="regType"
-              value="2"
-              required
-              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-              onChange={handleChange}
-              checked={formData.regType == "2"}
-            />
-            <label
-              for="checkbox-poor"
-              className="ms-2 text-sm font-medium text-gray-900 "
-            >
-              Poor
-            </label>
-          </div>
         </div>
+
+        <div className="flex items-center mb-4">
+            <input
+                id="checkbox-good"
+                type="radio"
+                name="venueRating"
+                value="good"
+                required
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                checked={formData.venueRating === "good"}
+                onChange={handleChange}
+            />
+            <label
+                htmlFor="checkbox-good"
+                className="ms-2 text-sm font-medium text-gray-900"
+            >
+                Good
+            </label>
+        </div>
+
+        <div className="flex items-center mb-4">
+            <input
+                id="checkbox-fair"
+                type="radio"
+                name="venueRating"
+                value="fair"
+                required
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                checked={formData.venueRating === "fair"}
+                onChange={handleChange}
+            />
+            <label
+                htmlFor="checkbox-fair"
+                className="ms-2 text-sm font-medium text-gray-900"
+            >
+                Fair
+            </label>
+        </div>
+
+        <div className="flex items-center mb-4">
+            <input
+                id="checkbox-poor"
+                type="radio"
+                name="venueRating"
+                value="poor"
+                required
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                checked={formData.venueRating === "poor"}
+                onChange={handleChange}
+            />
+            <label
+                htmlFor="checkbox-poor"
+                className="ms-2 text-sm font-medium text-gray-900"
+            >
+                Poor
+            </label>
+        </div>
+    </div>
         <hr />
 {/* Exhibitor page */}
         <div className="relative z-0 w-full mb-5 group mt-5">
@@ -346,29 +351,29 @@ const Attend = () => {
           </select>
         </div>
 {/* Sesions and Workshop */}
-<div className="relative z-0 w-full mb-5 group mt-5">
-            <p className="mb-3">Sessions and Workshops</p>
-          <label
-            for="countries"
-            className="peer-focus:font-medium  text-sm  text-black dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >
-           If you attended any sessions or workshops, please rate their quality and relevance.
-          </label>
-          <select
-            id="countries"
-            className="block py-2.5 h-12 w-full text-sm px-2 text-gray-900 bg-transparent border-0 border-b-2 border-gray-300   dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-            required
-            onChange={handleChange}
-            value={formData.hearingMethod}
-            name="hearingMethod"
-          >
-            <option className="hidden" value={""}>Select an option</option>
-            <option value={"0"}>Excellent</option>
-            <option value={"1"}>Good</option>
-            <option value={"2"}>Fair</option>
-            <option value={"3"}>Poor</option>
-            <option value={"4"}>Did not attend any</option>
-          </select>
+        <div className="relative z-0 w-full mb-5 group mt-5">
+                <p className="mb-3">Sessions and Workshops</p>
+            <label
+                for="countries"
+                className="peer-focus:font-medium  text-sm  text-black dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >
+            If you attended any sessions or workshops, please rate their quality and relevance.
+            </label>
+            <select
+                id="countries"
+                className="block py-2.5 h-12 w-full text-sm px-2 text-gray-900 bg-transparent border-0 border-b-2 border-gray-300   dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                required
+                onChange={handleChange}
+                value={formData.hearingMethod}
+                name="hearingMethod"
+            >
+                <option className="hidden" value={""}>Select an option</option>
+                <option value={"0"}>Excellent</option>
+                <option value={"1"}>Good</option>
+                <option value={"2"}>Fair</option>
+                <option value={"3"}>Poor</option>
+                <option value={"4"}>Did not attend any</option>
+            </select>
         </div>
 {/* Comment and extra feedbacks */}
         <div className="grid md:grid-cols-1 md:gap-6 mt-5">
