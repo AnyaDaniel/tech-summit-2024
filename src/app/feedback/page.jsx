@@ -224,7 +224,7 @@ const Attend = () => {
 
           <div className="flex items-center mt-3 mb-4">
             <input
-              id="checkbox-1"
+              id="checkbox-excelent"
               type="radio"
               value="1"
               name="regType"
@@ -234,7 +234,7 @@ const Attend = () => {
               onChange={handleChange}
             />
             <label
-              for="checkbox-1"
+              for="checkbox-excelent"
               className="ms-2 text-sm font-medium text-gray-900 "
             >
               Excellent
@@ -243,7 +243,7 @@ const Attend = () => {
 
           <div className="flex items-center mb-4">
             <input
-              id="checkbox-1"
+              id="checkbox-good"
               type="radio"
               name="regType"
               value="2"
@@ -253,7 +253,7 @@ const Attend = () => {
               checked={formData.regType == "2"}
             />
             <label
-              for="checkbox-1"
+              for="checkbox-good"
               className="ms-2 text-sm font-medium text-gray-900 "
             >
               Good
@@ -261,7 +261,7 @@ const Attend = () => {
           </div>
           <div className="flex items-center mb-4">
             <input
-              id="checkbox-3"
+              id="checkbox-fair"
               type="radio"
               name="regType"
               value="2"
@@ -271,7 +271,7 @@ const Attend = () => {
               checked={formData.regType == "2"}
             />
             <label
-              for="checkbox-1"
+              for="checkbox-fair"
               className="ms-2 text-sm font-medium text-gray-900 "
             >
               Fair
@@ -279,7 +279,7 @@ const Attend = () => {
           </div>
           <div className="flex items-center mb-4">
             <input
-              id="checkbox-3"
+              id="checkbox-poor"
               type="radio"
               name="regType"
               value="2"
@@ -289,7 +289,7 @@ const Attend = () => {
               checked={formData.regType == "2"}
             />
             <label
-              for="checkbox-1"
+              for="checkbox-poor"
               className="ms-2 text-sm font-medium text-gray-900 "
             >
               Poor
