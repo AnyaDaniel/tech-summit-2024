@@ -180,6 +180,37 @@ const Exhibitor = () => {
             </label>
           </div>
         </div>
+        <div className="relative z-0 w-full mb-5 group">
+          <label
+            for="countries"
+            className="peer-focus:font-medium  text-sm  text-black dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >
+            Product/Service Categories
+          </label>
+          <select
+            id="countries"
+            className="block py-2.5 h-12 w-full text-sm px-2 text-gray-900 bg-transparent border-0 border-b-2 border-gray-300   dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            required
+            onChange={handleChange}
+            value={formData.hearingMethod}
+            name="hearingMethod"
+          >
+            <option className="hidden" value={""}>Select an option</option>
+            <option value={"0"}>Food & Beverage   </option>
+            <option value={"1"}>Health & Wellness  </option>
+            <option value={"2"}>Fashion & Accessories   </option>
+            <option value={"2"}>Beauty & Personal Care   </option>
+            <option value={"2"}>Financial Services   </option>
+            <option value={"2"}>Real Estate   </option>
+            <option value={"2"}>Technology & IT Services   </option>
+            <option value={"2"}>Education & Training   </option>
+            <option value={"2"}>Arts & Entertainment   </option>
+            <option value={"2"}>Home Goods & Décor   </option>
+            <option value={"2"}>Automotive  </option>
+            <option value={"2"}>Consulting & Professional Services   </option>
+            <option value={"2"}>Nonprofit & Community Organizations   </option>
+          </select>
+        </div>
         <div className="grid md:grid-cols-1 md:gap-6">
           <div className="relative z-0 w-full mb-5 group">
             <input
@@ -218,9 +249,9 @@ const Exhibitor = () => {
             <option value={""} className="hidden">
               Select an option
             </option>
-            <option value={"1"}>Small 6'x8'</option>
-            <option value={"2"}>Medium 8'x8'</option>
-            <option value={"3"}>Large 8'x10'</option>
+            <option value={"1"}>Small 6'x 8' $100</option>
+            <option value={"2"}>Medium 8'x 8' $$120</option>
+            <option value={"3"}>Large 10'x 10' $150</option>
           </select>
         </div>
         <div className="grid md:grid-cols-1 md:gap-6">
@@ -253,12 +284,11 @@ const Exhibitor = () => {
           {loading ? "Submitting" : "Submit"}
         </button> */}
         <ul className="list-disk">
-          <li>
+          {/* <li>
             Regular price is <b>$100</b>
-          </li>
+          </li> */}
           <li>
-            All booths will cost the same and come with a table and two chairs
-            each
+          Early Bird Pricing ends February 10, 2025. Price will be $200 afterwards. All booths come with a table and two chairs.
           </li>
         </ul>
       </form>
