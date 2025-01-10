@@ -9,7 +9,7 @@ const Schedule = () => {
       </h1>
       <div className="wrapper bg-white rounded shadow w-full ">
         <div className="header flex justify-between border-b p-2">
-          <span className="text-lg font-bold">March 23, 2024</span>
+          <span className="text-lg font-bold">March 22, 2025</span>
           <div className="buttons">
             <button className="p-1">
               <svg

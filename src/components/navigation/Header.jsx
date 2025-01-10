@@ -29,12 +29,17 @@ import { BsFillDoorClosedFill, BsFillQuestionCircleFill } from "react-icons/bs";
 
 const links = [
   { href: "/", label: "Home", id: 1 },
+
   { href: "/attend", label: "Attend", id: 4 },
 
   { href: "/exhibitor", label: "Exhibit", id: 3 },
 
-  { href: "/volunteer", label: "Get Involved ", id: 5 },
-  { href: "/", label: "About", id: 2 },
+  { href: "/volunteer", label: "Volunteer ", id: 5 },
+
+  { href: "/", label: "Pitch"},
+  
+  { href: "/feedback", label: "Feedback", id: 2 },
+
   { href: "/contact", label: "Contact", id: 3 },
  
 ];

@@ -4,11 +4,11 @@ import Link from "next/link";
 
 const Sponsor = () => {
   const sponsors = [
-    { img: "/sponsor-one", id: 1 },
-    { img: "/alive", id: 2 },
-    { img: "/sponsor-three", id: 3 },
-    { img: "/sponsor-four", id: 4 },
-    { img: "/naija", id: 5 },
+    // { img: "/sponsor-one", id: 1 },
+    // { img: "/alive", id: 2 },
+    { img: "/sponsor-three", id: 3, link:"https://saskatoonchamber.com" },
+    // { img: "/sponsor-four", id: 4 },
+    // { img: "/naija", id: 5 },
   ];
 
   return (
@@ -23,16 +23,19 @@ const Sponsor = () => {
           </h4>
           <div>
             <p className="mt-3 text-[#fff] text-center sm:mt-5 text-lg md:mt-5 font-thin">
-              A heartfelt thank you to our esteemed sponsors for supporting the
-              Saskatoon Black Business Expo! These visionary partners play a
-              crucial role in fostering economic empowerment within the
-              community. Their commitment enables us to provide a platform for
-              Black-owned businesses to thrive and connect with a wider
-              audience.
+            The 2nd Saskatoon Black Business Expo is made possible by the support of our generous sponsors. These organizations share our vision of fostering entrepreneurship, diversity, and community empowerment. Their contributions enable us to create an impactful event that celebrates the achievements of Black businesses while driving opportunities for growth and collaboration.  
             </p>
-            <div className="flex flex-col items-center lg:flex-row gap-x-4   ">
+            <div className="flex flex-col items-center justify-center lg:flex-row gap-x-4   ">
               {sponsors.map((sponsor) => (
-                <span key={sponsor.id} className="w-full lg:w-1/3 mb-4 lg:mb-0">
+                <a
+                href={sponsor.link} target="_blank"
+                  key={sponsor.id}
+                  className={`${
+                    sponsor.id == 1 || sponsor.id == 5
+                      ? "w-[50%] lg:w-1/6"
+                      : "w-full lg:w-1/3"
+                  }  mb-4 lg:mb-0`}
+                >
                   <Image
                     width={500}
                     height={500}
@@ -40,7 +43,8 @@ const Sponsor = () => {
                     src={sponsor.img + ".png"}
                     alt={`Sponsor ${sponsor.id}`}
                   />
-                </span>
+                  {sponsor.id==3 && <div className="text-white text-center">Main Sponsor</div>}
+                </a>
               ))}
             </div>
             <Link href="/contact" className="flex justify-center">

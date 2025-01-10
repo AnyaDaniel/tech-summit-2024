@@ -1,16 +1,25 @@
-"use client"
+"use client";
 import axios from "axios";
 import Image from "next/image";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 
 const Exhibitor = () => {
-  const [loading, setLoading] = useState(false)
-  const [formData, setFormData] = useState({ name: "", email: "", phone: "", organisation: "", url: "", boothSize: null, description: "", additional: "" })
+  const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    organization: "",
+    url: "",
+    boothSize: null,
+    description: "",
+    additional: "",
+  });
   function handleChange(e) {
-    const former = JSON.parse(JSON.stringify(formData))
-    former[e.target.name] = e.target.value
-    setFormData(former)
+    const former = JSON.parse(JSON.stringify(formData));
+    former[e.target.name] = e.target.value;
+    setFormData(former);
   }
   return (
     <div className="mt-32 lg:mt-40 lg:mb-20">
@@ -24,50 +33,69 @@ const Exhibitor = () => {
         />{" "}
         <h1>- Exhibitor Registration Form</h1>
       </div>
-      <form className="max-w-xl mx-auto" method="post" onSubmit={async e => {
-        e.preventDefault()
-        try {
-          setLoading(true)
-          const { data, err } = await axios.post("/api/exhibitor", formData)
-          if (!err) {
-            toast("Exhibitor Registration form sent successfully and will be reviewed", {
-              theme: "colored",
-              type: "success",
-            })
-            setFormData({ name: "", email: "", phone: "", organisation: "", hearingMethod: null, regType: null, notes: "" })
-          } else {
-            toast(err, {
-              theme: "colored",
-              type: "warning",
-            })
+      <form
+        className="max-w-xl mx-auto"
+        method="post"
+        onSubmit={async (e) => {
+          e.preventDefault();
+          try {
+            setLoading(true);
+            const { data, err } = await axios.post("/api/exhibitor", formData);
+            if (!err) {
+              toast(
+                "Exhibitor Registration form sent successfully and will be reviewed",
+                {
+                  theme: "colored",
+                  type: "success",
+                }
+              );
+              setFormData({
+                name: "",
+                email: "",
+                phone: "",
+                organisation: "",
+                hearingMethod: null,
+                regType: null,
+                notes: "",
+              });
+              window.location = "https://buy.stripe.com/28o4iJgLMeXRe5i000";
+            } else {
+              toast(err, {
+                theme: "colored",
+                type: "warning",
+              });
+            }
+          } catch (error) {
+            console.log(error);
+            if (error.response && error.response.status != "404") {
+              return toast(error.response?.data?.err, {
+                theme: "colored",
+                type: "error",
+              });
+            }
+            toast(
+              "Unable to connect to servers check your internet and try again",
+              {
+                theme: "colored",
+                type: "error",
+              }
+            );
+          } finally {
+            setLoading(false);
           }
-        } catch (error) {
-          console.log(error)
-          if (error.response && error.response.status != "404") {
-            return toast(error.response?.data?.err, {
-              theme: "colored",
-              type: "error"
-            })
-          }
-          toast("Unable to connect to servers check your internet and try again", {
-            theme: "colored",
-            type: "error"
-          })
-        } finally {
-          setLoading(false)
-        }
-      }}>
+        }}
+      >
         <div className="grid md:grid-cols-1 md:gap-6">
           <div className="relative z-0 w-full mb-5 group">
             <input
               type="text"
-              name="organisation"
+              name="organization"
               id="floating_first_name"
               className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
               placeholder=" "
               required
               onChange={handleChange}
-              value={formData.organisation}
+              value={formData.organization}
             />
             <label
               for="floating_first_name"
@@ -187,14 +215,14 @@ const Exhibitor = () => {
             onChange={handleChange}
             value={formData.boothSize}
           >
-            <option value={""} className="hidden">Select an option</option>
-            <option value={"1"}> Small</option>
-            <option value={"2"}>Medium</option>
-            <option value={"3"}>Large</option>
+            <option value={""} className="hidden">
+              Select an option
+            </option>
+            <option value={"1"}>Small 6'x8'</option>
+            <option value={"2"}>Medium 8'x8'</option>
+            <option value={"3"}>Large 8'x10'</option>
           </select>
         </div>
-
-
         <div className="grid md:grid-cols-1 md:gap-6">
           <div className="relative z-0 w-full mb-5 group">
             <textarea
@@ -215,13 +243,24 @@ const Exhibitor = () => {
             </label>
           </div>
         </div>
-        <button
+        {/* <button
           type="submit"
-          className={`text-white ${loading ? "bg-blue-200" : "bg-blue-700 hover:bg-blue-800"} focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-3`}
+          className={`text-white ${
+            loading ? "bg-blue-200" : "bg-blue-700 hover:bg-blue-800"
+          } focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-3`}
           disabled={loading}
         >
           {loading ? "Submitting" : "Submit"}
-        </button>
+        </button> */}
+        <ul className="list-disk">
+          <li>
+            Regular price is <b>$100</b>
+          </li>
+          <li>
+            All booths will cost the same and come with a table and two chairs
+            each
+          </li>
+        </ul>
       </form>
     </div>
   );

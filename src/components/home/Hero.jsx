@@ -4,8 +4,8 @@ import Slider from "react-slick";
 import Link from "next/link";
 import { FaCalendarAlt } from "react-icons/fa";
 import Image from "next/image";
-import desktop from "@/images/New Project (1).jpg"
-import mobile from "@/images/mob.png"
+import desktop from "@/images/desk.jpg";
+import mobile from "@/images/mob.jpg";
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -63,7 +63,7 @@ const Hero = () => {
   // );
 
   return <div className="">
-    <Image src={isMobile ? mobile : desktop} className={"mt-[0vh] lg:mt-[1vh] w-full"}/>
+    <Image src={isMobile ? mobile : desktop} className={"w-full"} style={{height:`calc(100vh - 50px)`}}/>
   </div>
 };
 
