@@ -36,7 +36,7 @@ const Speakers = () => {
           Meet Our Speakers
         </h4>
         <p className="mt-3 text-white sm:mt-5  text-center md:mt-5 font-thin  mx-auto text-lg">
-        Learn from business leaders and visionaries at the Saskatoon Black Business Expo. Our lineup of speakers includes influential figures who will share insights on their business success, community impact, and navigating the entrepreneurial landscape. Gain valuable knowledge and inspiration from those who have paved the way for excellence.
+        Our lineup of inspiring speakers includes accomplished entrepreneurs, industry experts, and thought leaders ready to share their stories and insights. From innovative business strategies to personal success journeys, these speakers will leave you empowered and equipped with practical tools for success. Stay tuned for the full roster of names you won’t want to miss!  
         </p>
       </header>
       {/* <ul className="lg:py-4 mx-4 lg:mx-0 px-4 flex  items-center flex-row justify-center lg:space-x-8 space-x-4  sticky top-0 w-full overflow-y-hidden z-10 lg:overflow-x-hidden overflow-x-scroll no-scrollbar">

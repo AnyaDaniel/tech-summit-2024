@@ -34,7 +34,9 @@ const links = [
 
   { href: "/exhibitor", label: "Exhibit", id: 3 },
 
-  { href: "/volunteer", label: "Get Involved ", id: 5 },
+  { href: "/volunteer", label: "Volunteer ", id: 5 },
+
+  { href: "/", label: "Pitch"},
   
   { href: "/feedback", label: "Feedback", id: 2 },
 

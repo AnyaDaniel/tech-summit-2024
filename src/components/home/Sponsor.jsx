@@ -23,12 +23,7 @@ const Sponsor = () => {
           </h4>
           <div>
             <p className="mt-3 text-[#fff] text-center sm:mt-5 text-lg md:mt-5 font-thin">
-              A heartfelt thank you to our esteemed sponsors for supporting the
-              Saskatoon Black Business Expo! These visionary partners play a
-              crucial role in fostering economic empowerment within the
-              community. Their commitment enables us to provide a platform for
-              Black-owned businesses to thrive and connect with a wider
-              audience.
+            The 2nd Saskatoon Black Business Expo is made possible by the support of our generous sponsors. These organizations share our vision of fostering entrepreneurship, diversity, and community empowerment. Their contributions enable us to create an impactful event that celebrates the achievements of Black businesses while driving opportunities for growth and collaboration.  
             </p>
             <div className="flex flex-col items-center justify-center lg:flex-row gap-x-4   ">
               {sponsors.map((sponsor) => (

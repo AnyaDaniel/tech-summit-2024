@@ -56,11 +56,11 @@ const All = () => {
           />
 
           <div className=" flex justify-center items-center text-center  group-hover:flex absolute  p-2  bg-red-500 w-full  text-[#fff] bg-opacity-75 bottom-0 text-xl">
-             Bev Dubois
+          Cynthia Block 
           </div>
         </div>
         <p className="text-[#fff] text-center py-3 font-thin">
-          Deputy Mayor, City of Saskatoon
+          Mayor, City of Saskatoon
         </p>
         <div className="flex justify-center items-center  px-0 l py-2 gap-x-4">
           {/* <Link
@@ -167,16 +167,16 @@ const All = () => {
             width={500}
             height={500}
             className="shadow-md h-72 w-full object-cover"
-            src="/speaker3.jpeg"
+            src="/TODD.jpg"
             alt=""
           />
 
           <div className=" flex justify-center items-center text-center  group-hover:flex absolute  p-2  bg-red-500 w-full  text-[#fff] bg-opacity-75 bottom-0 text-xl">
-            Tosin Fetuga
+          Todd Goudy 
           </div>
         </div>
         <p className="text-[#fff] text-center py-3 font-thin">
-           Facilitator - Noblelinks Consulting
+          Speaker, Legislative Assembly of Saskatchewan
         </p>
         <div className="flex justify-center items-center  px-0 l py-2 gap-x-4">
           {/* <Link
@@ -201,50 +201,7 @@ const All = () => {
           </Link>  */}
         </div>
       </div>
-      <div
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="1000"
-      >
-        <div className="h-72 mx-auto relative group cursor-pointer  w-auto aspect-square">
-          <Image
-            width={500}
-            height={500}
-            className="shadow-md h-72 w-full object-cover"
-            src="/freshguy.jpg"
-            alt=""
-          />
-
-          <div className=" flex justify-center items-center text-center  group-hover:flex absolute  p-2  bg-red-500 w-full  text-[#fff] bg-opacity-75 bottom-0 text-xl">
-          Randy Weekes 
-          </div>
-        </div>
-        <p className="text-[#fff] text-center py-3 font-thin">
-        Speaker Legislative Assembly of Saskatchewan
-        </p>
-        <div className="flex justify-center items-center  px-0 l py-2 gap-x-4">
-          {/* <Link
-            href={"https://www.instagram.com/owojorigbenga/"}
-            className="text-[#fff]"
-          >
-            <FaInstagram className="text-lg " />
-          </Link> */}
-          <Link
-            href={
-              "https://linkedin.com/in/randy-weekes-8b2b025b"
-            }
-            className="text-[#fff]"
-          >
-            <FaLinkedinIn className="text-lg " />
-          </Link>
-          {/* <Link
-            href={"https://x.com/DrJohnOwojori?s=20"}
-            className="text-[#fff]"
-          >
-            <FaTwitter className="text-lg " />
-          </Link>  */}
-        </div>
-      </div>
+ 
       {/* <div>
         <div className="h-72  relative group cursor-pointer ">
           <Image
