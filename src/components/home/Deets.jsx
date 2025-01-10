@@ -20,13 +20,7 @@ const Deets = () => {
               </h1>
 
               <p className="text-gray-500 text-center text-lg">
-                The primary goal of the Saskatoon Black Business Expo is to
-                showcase and promote Black-owned businesses, fostering
-                networking, collaboration, and economic empowerment within the
-                community. The event aims to provide a platform for
-                entrepreneurs to connect with other businesses, prospects,
-                investors, and procurement officers from government and
-                corporate organizations.
+              The 2nd Saskatoon Black Business Expo aims to celebrate, empower, and elevate Black entrepreneurs and businesses by providing a platform to showcase their products and services, connect with potential clients and collaborators, and access vital resources for growth. The Expo fosters an inclusive environment where participants can gain knowledge, build networks, and explore opportunities to advance their business goals while strengthening the economic impact of Black-owned businesses within the community. 
               </p>
               {/* <button className="bg-netYellow lg:w-60 mt-5 flex justify-center p-2 font-semibold">
                 Learn More
