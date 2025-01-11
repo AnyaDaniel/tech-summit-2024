@@ -47,7 +47,7 @@ const Feedback = () => {
                 e.preventDefault();
                 try {
                     setLoading(true);
-                    const { data, err } = await axios.post("/api/feedback", formData);
+                    const { data, err } = await axios.post("/api/feedback/", formData);
                     if (!err) {
                         toast("Feedback Request form sent successfully and will be reviewed", {
                             theme: "colored",
@@ -313,7 +313,7 @@ const Feedback = () => {
           <div className="relative z-0 w-full mb-5 group">
             <textarea
               type="text"
-              name="additionalComments:"
+              name="additionalComments"
               onChange={handleChange}
               value={formData.additionalComments}
               id="optional"
