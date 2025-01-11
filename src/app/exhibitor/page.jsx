@@ -58,7 +58,7 @@ const Exhibitor = () => {
                 regType: null,
                 notes: "",
               });
-              window.location = "https://buy.stripe.com/28o4iJgLMeXRe5i000";
+              window.location = "https://buy.stripe.com/5kA7tXc7h4H40bSfYY";
             } else {
               toast(err, {
                 theme: "colored",
@@ -179,6 +179,26 @@ const Exhibitor = () => {
               Website (if applicable):
             </label>
           </div>
+          <div className="grid md:grid-cols-1 md:gap-6">
+          <div className="relative z-0 w-full mb-5 group">
+            <textarea
+              type="text"
+              name="notes"
+              onChange={handleChange}
+              value={formData.notes}
+              id="optional"
+              className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              cols={3}
+            />
+            <label
+              for="orgname"
+              className="peer-focus:font-medium absolute text-sm text-black dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >
+              Social Media Handle
+            </label>
+          </div>
+        </div>
         </div>
         <div className="relative z-0 w-full mb-5 group">
           <label
@@ -209,6 +229,7 @@ const Exhibitor = () => {
             <option value={"2"}>Automotive  </option>
             <option value={"2"}>Consulting & Professional Services   </option>
             <option value={"2"}>Nonprofit & Community Organizations   </option>
+            <option value={"2"}>Others  </option>
           </select>
         </div>
         <div className="grid md:grid-cols-1 md:gap-6">
@@ -250,8 +271,8 @@ const Exhibitor = () => {
               Select an option
             </option>
             <option value={"1"}>Small 6'x 8' $100</option>
-            <option value={"2"}>Medium 8'x 8' $$120</option>
-            <option value={"3"}>Large 10'x 10' $150</option>
+            <option value={"2"}>Medium 8'x 8' $$150</option>
+            <option value={"3"}>Large 10'x 10' $200</option>
           </select>
         </div>
         <div className="grid md:grid-cols-1 md:gap-6">
@@ -274,7 +295,7 @@ const Exhibitor = () => {
             </label>
           </div>
         </div>
-        {/* <button
+        <button
           type="submit"
           className={`text-white ${
             loading ? "bg-blue-200" : "bg-blue-700 hover:bg-blue-800"
@@ -282,14 +303,14 @@ const Exhibitor = () => {
           disabled={loading}
         >
           {loading ? "Submitting" : "Submit"}
-        </button> */}
+        </button>
         <ul className="list-disk">
           {/* <li>
             Regular price is <b>$100</b>
           </li> */}
-          <li>
+          {/* <li>
           Early Bird Pricing ends February 10, 2025. Price will be $200 afterwards. All booths come with a table and two chairs.
-          </li>
+          </li> */}
         </ul>
       </form>
     </div>
