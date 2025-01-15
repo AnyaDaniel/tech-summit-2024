@@ -151,12 +151,12 @@ const Attend = () => {
             <option value={"0"}>Social Media (Facebook, Instagram, Twitter, LinkedIn)  </option>
             <option value={"1"}>Word of Mouth</option>
             <option value={"2"}>Online Advertisement  </option>
-            <option value={"2"}>Community Group or Organization  </option>
-            <option value={"2"}>Flyer or Poster  </option>
-            <option value={"2"}>Radio/TV  </option>
-            <option value={"2"}>email Invitation  </option>
-            <option value={"2"}>Previous Expo Attendance  </option>
-            <option value={"2"}>Other Other  </option>
+            <option value={"3"}>Community Group or Organization  </option>
+            <option value={"4"}>Flyer or Poster  </option>
+            <option value={"5"}>Radio/TV  </option>
+            <option value={"6"}>email Invitation  </option>
+            <option value={"7"}>Previous Expo Attendance  </option>
+            <option value={"8"}>Other Other  </option>
           </select>
         </div>
 
