@@ -219,17 +219,17 @@ const Exhibitor = () => {
             <option value={"0"}>Food & Beverage   </option>
             <option value={"1"}>Health & Wellness  </option>
             <option value={"2"}>Fashion & Accessories   </option>
-            <option value={"2"}>Beauty & Personal Care   </option>
-            <option value={"2"}>Financial Services   </option>
-            <option value={"2"}>Real Estate   </option>
-            <option value={"2"}>Technology & IT Services   </option>
-            <option value={"2"}>Education & Training   </option>
-            <option value={"2"}>Arts & Entertainment   </option>
-            <option value={"2"}>Home Goods & Décor   </option>
-            <option value={"2"}>Automotive  </option>
-            <option value={"2"}>Consulting & Professional Services   </option>
-            <option value={"2"}>Nonprofit & Community Organizations   </option>
-            <option value={"2"}>Others  </option>
+            <option value={"3"}>Beauty & Personal Care   </option>
+            <option value={"4"}>Financial Services   </option>
+            <option value={"5"}>Real Estate   </option>
+            <option value={"6"}>Technology & IT Services   </option>
+            <option value={"7"}>Education & Training   </option>
+            <option value={"8"}>Arts & Entertainment   </option>
+            <option value={"9"}>Home Goods & Décor   </option>
+            <option value={"10"}>Automotive  </option>
+            <option value={"11"}>Consulting & Professional Services   </option>
+            <option value={"12"}>Nonprofit & Community Organizations   </option>
+            <option value={"13"}>Others  </option>
           </select>
         </div>
         <div className="grid md:grid-cols-1 md:gap-6">
