@@ -7,7 +7,8 @@ const Sponsor = () => {
     { img: "/TDD", id: 1 },
     { img: "/BDC", id: 2 },
     { img: "/sponsor-three", id: 3, link:"https://saskatoonchamber.com" },
-    { img: "/GOVT", id: 4 },
+    { img: "/Gov", id: 4 },
+    { img: "/Gov", id: 6 },
     { img: "/WESK", id: 5 },
   ];
 
