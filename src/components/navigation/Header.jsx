@@ -304,7 +304,7 @@ const Header = () => {
 
             <nav className="flex flex-col ">
               {links.map((link) => (
-                <Link
+                <Link key={link.label}
                   href={link.href}
                   onClick={() => {
                     setIsActive(false);
