@@ -1,5 +1,4 @@
 import React from 'react'
-import Hero from '@/components/home/Hero';
 import Image from 'next/image';
 
 const teamMembers = [
@@ -9,24 +8,9 @@ const teamMembers = [
     image: '/contestants/Afolake Idris - Distinct Interiors1.jpg',
   },
   {
-    name: 'Peter OlasunkanmiBiz',
-    company: 'vital signs and technologies',
-    image: '/contestants/Portrait_Placeholder.png',
-  },
-  {
-    name: 'Peace Olabisi',
-    company: 'LipstrybyP',
-    image: '/contestants/Portrait_Placeholder.png',
-  },
-  {
     name: 'Somtochukwu Ufondu',
     company: 'Somtico fashion hub',
     image: '/contestants/somtochukwu Ufondu1.jpg',
-  },
-  {
-    name: 'Emoedume Morningstar',
-    company: 'LIMITL3SS FORGOD',
-    image: '/contestants/Portrait_Placeholder.png',
   },
   {
     name: 'Fehintoluwa Alawonde',
@@ -48,6 +32,25 @@ const teamMembers = [
     company: 'Butter and bliss foods ltd',
     image: '/contestants/Butter and bliss.jpg',
   },
+  {
+    name: 'Peter OlasunkanmiBiz',
+    company: 'vital signs and technologies',
+    image: '/contestants/Portrait_Placeholder.png',
+  },
+  {
+    name: 'Peace Olabisi',
+    company: 'LipstrybyP',
+    image: '/contestants/Portrait_Placeholder.png',
+  },
+  
+  {
+    name: 'Emoedume Morningstar',
+    company: 'LIMITL3SS FORGOD',
+    image: '/contestants/Portrait_Placeholder.png',
+  },
+  
+  
+  
 ];
 
 const Page = () => {
