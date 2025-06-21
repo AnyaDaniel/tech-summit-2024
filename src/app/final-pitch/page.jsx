@@ -35,7 +35,7 @@ const teamMembers = [
   {
     name: 'Peter OlasunkanmiBiz',
     company: 'vital signs and technologies',
-    image: '/contestants/Portrait_Placeholder.png',
+    image: '/contestants/olasunkami.jpg',
   },
   {
     name: 'Peace Olabisi',
@@ -46,7 +46,7 @@ const teamMembers = [
   {
     name: 'Emoedume Morningstar',
     company: 'LIMITL3SS FORGOD',
-    image: '/contestants/Portrait_Placeholder.png',
+    image: '/contestants/morning-star.jpg',
   },
   
   
@@ -57,23 +57,43 @@ const Page = () => {
     return (
       <>
       <header className="pitch-header bg-green-800 text-white py-10 text-center">
-                      <Image
-                          src="/pitch-banner.png"
-                          alt="Pitch Banner"
-                          width={800}
-                          height={300}
-                          className="mx-auto rounded-lg shadow-lg mt-10"
-                      />
-                      <h1 className="pitch-title text-4xl font-bold mt-6">
-                          SBBN Entrepreneur Pitch Competition
-                      </h1>
-                      <p className="pitch-subtitle text-lg mt-2">
-                          Unlock Your Business Potential
-                      </p>
+        <Image src="/pitch-banner.png" alt="Pitch Banner" width={800} height={300} className="mx-auto rounded-lg shadow-lg mt-10" />
+        <h1 className="pitch-title text-4xl font-bold mt-6"> SBBN Entrepreneur Pitch Competition </h1>
+        <p className="pitch-subtitle text-lg mt-2"> Unlock Your Business Potential</p>
     </header>
         
         <section className="max-w-6xl mx-auto md:px-16 py-16 space-y-16">
-            {/* Contestants */}
+            
+          {/* Event Intro Section */}
+          <article className="p-8 rounded-lg space-y-6 text-lg text-gray-800 leading-relaxed">
+            <p className="text-2xl font-bold text-center">
+              Join us for the SBBN Pitch Contest Final, where the boldest Black entrepreneurs take the stage to pitch their visions, disrupt industries, and make history.
+            </p>
+            
+            <p>
+              This is not just a contest — it's a movement, a celebration, and a front-row seat to the future of business powered by Black innovation.
+            </p>
+
+            <ul className="list-disc list-inside space-y-2">
+              <li>
+                <strong>Witness the Top Finalists Live –</strong> Experience the energy as finalists present groundbreaking business ideas to a panel of expert judges.
+              </li>
+              <li>
+                <strong>Celebrate Excellence –</strong> Cheer on the next wave of thriving Black entrepreneurs making their mark.
+              </li>
+              <li>
+                <strong>Network with Changemakers –</strong> Connect with founders, creatives, investors, and community leaders shaping the future of Black business.
+              </li>
+              <li>
+                <strong>Be Inspired –</strong> Hear real stories of resilience, creativity, and impact that will leave you fired up to pursue your own goals.
+              </li>
+            </ul>
+
+            <p>
+              Whether you're an aspiring entrepreneur, investor, supporter, or simply curious, this is your chance to be part of something powerful. History isn’t just happening. It’s being made — and you’re invited to witness it.
+            </p>
+          </article>
+           {/* Contestants */}
           <section className="bg-white py-4">
             <h2 className="text-3xl font-bold text-center mb-12">Contestants</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-0">
@@ -102,7 +122,7 @@ const Page = () => {
             <h2 className="text-3xl font-bold border-b-2 border-gray-300 pb-2">Mentorship Session Leads</h2>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-disc list-inside text-lg text-gray-700">
               <li>Mrs Olabimtan, CEO of O O and O Accounting</li>
-              <li>Noble Links Consulting</li>
+              <li>Noblelinks Consulting</li>
               <li>WESK</li>
               <li>BDC</li>
               <li>SREDA in conjunction with Chambers</li>
