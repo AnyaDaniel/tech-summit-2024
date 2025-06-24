@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-
+import Link from 'next/link';
 const teamMembers = [
   {
     name: 'Afolakemi Idris',
@@ -38,7 +38,7 @@ const teamMembers = [
     image: '/contestants/olasunkami.jpg',
   },
   {
-    name: 'Peace Olabisi',
+    name: 'Praise Olabisi',
     company: 'LipstrybyP',
     image: '/contestants/Portrait_Placeholder.png',
   },
@@ -94,7 +94,7 @@ const Page = () => {
             </p>
           </article>
            {/* Contestants */}
-          <section className="bg-white py-4">
+          <section className="bg-white py-4 px-12 md:px-0 mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">Contestants</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-0">
               {teamMembers.map((member, index) => (
@@ -118,7 +118,7 @@ const Page = () => {
             </div>
           </section>
           {/* Mentorship Leads */}
-          <article className="space-y-6">
+          <article className="space-y-6 px-8 md:px-0">
             <h2 className="text-3xl font-bold border-b-2 border-gray-300 pb-2">Mentorship Session Leads</h2>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-disc list-inside text-lg text-gray-700">
               <li>Mrs Olabimtan, CEO of O O and O Accounting</li>
@@ -130,20 +130,29 @@ const Page = () => {
           </article>
   
           {/* Judges */}
-          <article className="space-y-6">
+          <article className="space-y-6 px-8 md:px-0 mx-auto">
             <h2 className="text-3xl font-bold border-b-2 border-gray-300 pb-2">Judges</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {judges.map((judge, index) => (
-                <div key={index} className="bg-white border rounded-lg shadow p-4">
-                  <h3 className="text-xl font-semibold mb-1">{judge.name}</h3>
-                  <p className="text-gray-600">{judge.title}</p>
+            <div className="flex flex-wrap justify-center gap-8">
+            {judges.map((judge, index) => (
+              <div
+                key={index}
+                className="bg-white items-center w-80 rounded-lg overflow-hidden shadow-md transition transform hover:-translate-y-1 hover:shadow-lg"
+              >
+                <img
+                  src={judge.image}
+                  alt={judge.name}
+                  className="w-80 h-60 aspect-[3/4] rounded-md shadow"
+                />
+                <div className="p-4 text-center">
+                  <h3 className="text-lg font-semibold mb-1">{judge.name}</h3>
+                  <p className="text-sm text-gray-500">{judge.title}</p>
                 </div>
-              ))}
+              </div>
+            ))}
             </div>
           </article>
-  
           
-          <article className="space-y-4 text-lg text-gray-800">
+          <article className="space-y-4 text-lg text-gray-800 px-8 md:px-0">
           <h1 className="text-4xl font-bold border-b-2 border-gray-300 pb-2">
             Final Pitch Contest
           </h1>
@@ -152,14 +161,14 @@ const Page = () => {
           <p><strong>Venue:</strong> 161 Jessop Avenue, Saskatoon SK.</p>
           <p>
             <strong>Eventbrite link for the final pitch contest:</strong>{' '}
-            <a
-              href="#"
+            <Link
+              href="https://www.eventbrite.ca/e/sbbn-entrepreneur-pitch-contest-tickets-1414228127399?aff=oddtdtcreator"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 underline hover:text-blue-800"
             >
-              https://www.eventbrite.ca/e/sbbn-entrepreneur-pitch-contest-tickets-1414228127399?aff=oddtdtcreator
-            </a>
+              event tribe
+            </Link>
           </p>
         </article>
         </section>
@@ -168,11 +177,31 @@ const Page = () => {
   };
   
   const judges = [
-    { name: "Stephane Oreilly", title: "SREDA" },
-    { name: "Olu Ahmed", title: "BDC" },
-    { name: "Jason Aebig", title: "CEO, Chambers" },
-    { name: "Nowshad Ali", title: "CEO, On Purpose Leadership" },
-    { name: "Johaine Thomas-Miranjie", title: "President & CEO, JTM Business Solutions" },
+    {
+      name: "Stephane Oreilly",
+      title: "SREDA",
+      image: "/judges/oriley.jpg",
+    },
+    {
+      name: "Olu Ahmed",
+      title: "BDC",
+      image: "/judges/ahmed.jpg",
+    },
+    {
+      name: "Jason Aebig",
+      title: "CEO, Chambers",
+      image: "/judges/jason.jpg",
+    },
+    {
+      name: "Nowshad Ali",
+      title: "CEO, On Purpose Leadership",
+      image: "/judges/ali.jpg",
+    },
+    {
+      name: "Johaine Thomas-Miranjie",
+      title: "President & CEO, JTM Business Solutions",
+      image: "/judges/johaine.jpg",
+    },
   ];
   
 
