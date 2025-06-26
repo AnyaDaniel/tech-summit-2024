@@ -1,52 +1,68 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaInstagram } from 'react-icons/fa';
 const teamMembers = [
   {
-    name: 'Afolakemi Idris',
-    company: 'distinct interiors',
+    name: 'Afolami Idris',
+    company: 'Distinct Interiors',
     image: '/contestants/Afolake Idris - Distinct Interiors1.jpg',
+    instagram: "https://www.instagram.com/distinteriors?igsh=ZWZ6bzBhd2ExMHlo"
   },
   {
     name: 'Somtochukwu Ufondu',
-    company: 'Somtico fashion hub',
-    image: '/contestants/somtochukwu Ufondu1.jpg',
+    company: 'Somtico Fashion Hub',
+    image: '/contestants/Somtochukwu Ufondu1.jpg',
+    instagram: "https://www.instagram.com/somticofashionhub?igsh=NXNqOWcweWVnOHI3"
   },
   {
     name: 'Fehintoluwa Alawonde',
     company: 'Ennyalabakes',
     image: '/contestants/Fehintoluwa Alawonde Ennyalabakes1.jpg',
+    instagram: "https://www.instagram.com/ennyalabakes?igsh=MXRjcHhqeWN2Z296bA=="
   },
   {
     name: 'Oluwaseun Oyekoya',
-    company: 'Teal city logistics ltd',
+    company: 'Teal City Logistics ltd',
     image: '/contestants/Teal city logistics.jpeg',
+    instagram: "https://www.instagram.com/mycitylogistics?igsh=MWRkMWxxdnU3MzRhOA=="
   },
   {
     name: 'Kayode Okunola',
-    company: 'TKT Auto sales and repairs',
+    company: 'TKT Auto Sales and Repairs',
     image: '/contestants/Mr okunola1.jpg',
+    instagram: "https://www.instagram.com/kayodetokunola?igsh=ZnFmNDJqdWo4MHF5"
   },
   {
     name: 'Olamide Ladapo',
-    company: 'Butter and bliss foods ltd',
+    company: 'Butter and Bliss Foods Ltd',
     image: '/contestants/Butter and bliss.jpg',
+    instagram: "https://www.instagram.com/the_butterandbliss?igsh=MTg0NWVzY3EybW1pZQ=="
   },
   {
-    name: 'Peter OlasunkanmiBiz',
-    company: 'vital signs and technologies',
+    name: 'Peter Olasunkanmi',
+    company: 'Biz Vital Signs and Technologies',
     image: '/contestants/olasunkami.jpg',
+    instagram: "https://www.instagram.com/bizvitalsigns?igsh=ZXdmZXBxOXp0bnA3"
   },
   {
     name: 'Praise Olabisi',
     company: 'LipstrybyP',
-    image: '/contestants/Portrait_Placeholder.png',
+    image: '/contestants/praise.jpg',
+    instagram: "https://www.instagram.com/lipistrybyp?igsh=MXE0OHc1M2RrYmNpdQ=="
   },
   
   {
     name: 'Emoedume Morningstar',
     company: 'LIMITL3SS FORGOD',
     image: '/contestants/morning-star.jpg',
+    instagram: "https://www.instagram.com/limitl3ssbrand?igsh=MTYxbnlhbDV1c2d1cA=="
+  },
+  {
+    name: 'Wilfred Sampson',
+    company: 'Wise concepts',
+    image: '/contestants/wilfred.jpg',
+    instagram: "https://www.instagram.com/limitl3ssbrand?igsh=MTYxbnlhbDV1c2d1cA=="
   },
   
   
@@ -94,8 +110,9 @@ const Page = () => {
             </p>
           </article>
            {/* Contestants */}
-          <section className="bg-white py-4 px-12 md:px-0 mx-auto">
+           <section className="bg-white py-4 px-6 md:px-0 mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">Contestants</h2>
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-0">
               {teamMembers.map((member, index) => (
                 <div
@@ -106,12 +123,24 @@ const Page = () => {
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-full h-64  aspect-[3/4]"
+                      className="w-full h-64 object-cover"
                     />
                   </div>
-                  <div className="p-4 text-center">
-                    <h3 className="text-lg font-semibold mb-1">{member.name}</h3>
+                  <div className="p-4 text-center space-y-2">
+                    <h3 className="text-lg font-semibold">{member.name}</h3>
                     <p className="text-sm text-gray-500">{member.company}</p>
+
+                    {/* Instagram Icon */}
+                    {member.instagram && (
+                      <Link
+                        href={member.instagram}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center w-10 h-10 bg-gray-100 text-black rounded-full h transition"
+                      >
+                        <FaInstagram size={25} />
+                      </Link>
+                    )}
                   </div>
                 </div>
               ))}
@@ -165,9 +194,9 @@ const Page = () => {
               href="https://www.eventbrite.ca/e/sbbn-entrepreneur-pitch-contest-tickets-1414228127399?aff=oddtdtcreator"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 underline hover:text-blue-800"
+              className="text-blue-600 hover:text-blue-800"
             >
-              event tribe
+              Register here
             </Link>
           </p>
         </article>
@@ -189,7 +218,7 @@ const Page = () => {
     },
     {
       name: "Jason Aebig",
-      title: "CEO, Chambers",
+      title: "CEO, Saskatoon Chamber of Commerce",
       image: "/judges/jason.jpg",
     },
     {
