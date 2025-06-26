@@ -48,7 +48,7 @@ const teamMembers = [
   {
     name: 'Praise Olabisi',
     company: 'LipstrybyP',
-    image: '/contestants/Portrait_Placeholder.png',
+    image: '/contestants/praise.jpg',
     instagram: "https://www.instagram.com/lipistrybyp?igsh=MXE0OHc1M2RrYmNpdQ=="
   },
   
